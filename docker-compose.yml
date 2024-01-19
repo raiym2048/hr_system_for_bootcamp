@@ -1,0 +1,10 @@
+version: "1"
+services:
+  hr_system:
+    container_name: hr_system_container
+    image: hr_system
+    ports:
+      - 8085:8085
+    environment:
+      SRPING_DATASOURCE_URL: jdbc:postgresql://host.docker.internal:5432/hr_system
+      SPRING_FLYWAY_URL: jdbc:postgresql://host.docker.internal:5432/hr_system

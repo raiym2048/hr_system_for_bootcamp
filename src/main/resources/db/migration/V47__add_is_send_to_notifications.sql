@@ -1,0 +1,2 @@
+ALTER TABLE notification
+    ADD COLUMN is_send BOOLEAN DEFAULT FALSE NOT NULL;
